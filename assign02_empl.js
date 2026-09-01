@@ -29,6 +29,7 @@ const employees =[
 // console.log(employees);
 
 console.log("filter by department")
+
 //filter by department
 const itEmployee = employees.filter( employee => {
     return employee.department === "IT";
@@ -41,6 +42,8 @@ console.log("Descending sorting ")
 const sortBySalary = [...employees].sort((a,b) =>{
     return b.salary - a.salary;
 });
+
+// [...employees] is a spread operator which makes new copy of array
 
 console.log(sortBySalary);
 

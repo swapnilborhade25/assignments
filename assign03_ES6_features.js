@@ -30,8 +30,16 @@ const employees = [
 const filterByDeprtment = (designation) =>{
     return employees.filter(emp => emp.designation === designation);
 };
+// console.log(filterByDeprtment("developer"));
 
-console.log(filterByDeprtment("developer"));
+// using destructor with Arrow
+const filterDepart = (designation) =>{
+    return employees.filter( ({designation : empDesignation}) =>
+    empDesignation === designation);
+};
+console.log(filterDepart("developer"));
+
+
 
 // function//
 // console.log(filterByDeprt("developer"));
@@ -44,7 +52,7 @@ console.log(filterByDeprtment("developer"));
 //************************************ */
 
 // sorting salary function
-console.log(sortSalary());
+// console.log(sortSalary());
 function sortSalary (){
     return [...employees].sort((a,b) => {
         return b.salary - a.salary;
@@ -58,5 +66,12 @@ console.log("Sorting");
 let sortByArrowFunc = ()=>{
     return [...employees].sort((a,b) => b.salary - a.salary);
 };
-console.log(sortByArrowFunc());
+// console.log(sortByArrowFunc());
 
+//******************* */
+// sorting using arrow with destructor
+const sortArrowDestr = () => {
+    return [...employees].sort( ({salary : a}, {salary : b}) => b-a);
+};
+
+console.log(sortArrowDestr());

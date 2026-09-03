@@ -8,7 +8,7 @@ async function getWeather() {
     console.log("The city name is : ", data.name);
     console.log("Temperature is : ", data.main.temp)
     console.log("The humidity is : ", data.main.humidity);
-    console.log("weather condition is :", data.weather[0].description); // here in o/p gives in array
+    console.log("weather condition is :", data.weather[0].description); // here in weather o/p gives in array
      
 }
 

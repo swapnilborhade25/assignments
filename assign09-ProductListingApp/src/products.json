@@ -1,0 +1,31 @@
+[
+    {
+        "id" : 1,
+        "name" : "pen",
+        "type" : "stationary",
+        "price" : 30
+    },
+    {
+         "id" : 2,
+        "name" : "book",
+        "type" : "stationary",
+        "price" : 100
+    },
+    {
+         "id" : 3,
+        "name" : "Table",
+        "type" : "furniture",
+        "price" : 2500
+    },
+    {
+         "id" : 4,
+        "name" : "Mobile",
+        "type" : "accessories",
+        "price" : 82000
+    },{
+         "id" : 5,
+        "name" : "earphone",
+        "type" : "accessories",
+        "price" : 1000
+    }
+]
